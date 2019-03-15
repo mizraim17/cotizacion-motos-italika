@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "615e1117b99de4099a66",
+    "revision": "fbfae85ac6a0751a245a",
     "url": "/cotizacion-motos/static/css/main.bfd06a07.chunk.css"
   },
   {
-    "revision": "615e1117b99de4099a66",
-    "url": "/cotizacion-motos/static/js/main.2c0ec7e1.chunk.js"
+    "revision": "fbfae85ac6a0751a245a",
+    "url": "/cotizacion-motos/static/js/main.b8545975.chunk.js"
   },
   {
     "revision": "10373acf0b56208e9195",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/cotizacion-motos/static/js/2.cb2dea98.chunk.js"
   },
   {
-    "revision": "9774813e01f8eb8b779a45239bf0dc9c",
+    "revision": "c6d2c690ac67b994f4bed4cb569a12dd",
     "url": "/cotizacion-motos/index.html"
   }
 ];
