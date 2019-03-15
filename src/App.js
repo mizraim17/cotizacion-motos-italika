@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
+import {Table} from 'react-materialize'
 import './App.css';
-import Table from "./Component/Table";
+import Rowz from "./Component/Rowz";
 import allMotos from './motos.json'
-import Comentario from "./Component/Comentario";
 
 class App extends Component {
   state ={
@@ -20,7 +20,34 @@ class App extends Component {
 
     return (
 <div>
-      <Comentario/>
+  <h1>Cotizacion de motos</h1>
+  <Table responsive>
+    <thead>
+    <tr>
+      <th data-field="id">Modelo</th>
+      <th data-field="Cilindraje"> Cilindraje</th>
+      <th data-field="name">Precio</th>
+      <th data-field="price"> Frenos </th>
+      <th data-field="price"> Peso </th>
+      <th data-field="Largo">Largo</th>
+      <th data-field="Foto"> Foto</th>
+      <th data-field="Url"> Url Página</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    {
+      Bdmotos.map((el,i)=>{
+       return(
+         <Rowz
+           key={i}
+            moto={el}
+         />
+       )
+      })
+    }
+    </tbody>
+  </Table>
 
 </div>
     );
