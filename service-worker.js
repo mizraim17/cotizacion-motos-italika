@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/cotizacion-motos/precache-manifest.07d390cd6ebce9a549274dab41bb42b9.js"
+  "/cotizacion-motos/precache-manifest.1b4c654fc0211858a5d86e59fbba6ec8.js"
 );
 
 workbox.clientsClaim();
