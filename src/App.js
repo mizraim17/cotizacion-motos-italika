@@ -53,7 +53,7 @@ componentWillMount() {
       <th data-field="Cilindraje"> Cilindraje</th>
       <th data-field="name">Precio</th>
       <th data-field="price"> Frenos </th>
-      <th data-field="price"> Llanta trasera </th>
+      <th data-field="price"> Llanta Trasera </th>
       <th data-field="price"> Peso </th>
       <th data-field="Largo">Largo</th>
       <th data-field="Foto"> Foto</th>
