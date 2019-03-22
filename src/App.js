@@ -42,7 +42,7 @@ componentWillMount() {
 
     return (
 <div className="container">
-  <h1>Cotizacion de Motos Italika</h1>
+  <h1>Cotizacion de Motos Italika 150cc</h1>
   <Button onClick={this.orderLarge}> Por largo</Button>
   <Button onClick={this.orderPrice}> Por Precio</Button>
   <Button onClick={this.orderWheel}> Por Long Llanta</Button>
