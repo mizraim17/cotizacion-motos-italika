@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/cotizacion-motos/precache-manifest.102302b8db10939b60e3a0a1b9a3bc19.js"
+  "/cotizacion-motos-italika/precache-manifest.c236588e4be1e9954325a808036b2ae2.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/cotizacion-motos/index.html", {
+workbox.routing.registerNavigationRoute("/cotizacion-motos-italika/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
