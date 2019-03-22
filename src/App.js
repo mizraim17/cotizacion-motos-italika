@@ -30,6 +30,11 @@ componentWillMount() {
     Bdmotos .sort((a, b) => a.Precio !== b.Precio ? a.Precio < b.Precio ? -1 : 1 : 0);
     this.setState({Bdmotos: Bdmotos})
   }
+  orderWheel= () =>{
+    let Bdmotos = this.state.Bdmotos;
+    Bdmotos .sort((a, b) => a.LlantaTrasera !== b.LlantaTrasera ? a.LlantaTrasera < b.LlantaTrasera ? -1 : 1 : 0);
+    this.setState({Bdmotos: Bdmotos})
+  }
 
   render() {
     let {Bdmotos} = this.state;
@@ -40,6 +45,7 @@ componentWillMount() {
   <h1>Cotizacion de Motos Italika</h1>
   <Button onClick={this.orderLarge}> Por largo</Button>
   <Button onClick={this.orderPrice}> Por Precio</Button>
+  <Button onClick={this.orderWheel}> Por Long Llanta</Button>
   <Table responsive  className=" red accent-1 white-text" >
     <thead>
     <tr>
@@ -47,6 +53,7 @@ componentWillMount() {
       <th data-field="Cilindraje"> Cilindraje</th>
       <th data-field="name">Precio</th>
       <th data-field="price"> Frenos </th>
+      <th data-field="price"> Llanta trasera </th>
       <th data-field="price"> Peso </th>
       <th data-field="Largo">Largo</th>
       <th data-field="Foto"> Foto</th>
