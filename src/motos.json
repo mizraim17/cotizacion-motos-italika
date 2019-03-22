@@ -36,7 +36,7 @@
    ,
    {
      "Modelo": "  DT150 Sport",
-     "Precio":  24999,
+     "Precio":  20999,
      "Cilindraje": 150,
      "Frenos":  " Disco Sencillo,Tambor",
      "Peso": 150,
@@ -49,7 +49,7 @@
    {
      "Modelo": " 125Z",
      "Precio":  22999,
-     "Cilindraje": 150,
+     "Cilindraje": 125,
      "Frenos":  " Disco Sencillo,Tambor",
      "Peso": 150,
      "Largo":  1935,

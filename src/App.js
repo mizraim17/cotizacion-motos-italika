@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import {Table} from 'react-materialize'
+import {Table,Button} from 'react-materialize'
 import './App.css';
 import Rowz from "./Component/Rowz";
 import allMotos from './motos.json'
@@ -9,19 +9,38 @@ class App extends Component {
   state ={
     Bdmotos:allMotos
   }
-  // componentWillMount() {
-  //   let {Bdmotos} = this.state
-  //   this.setState({Bdmotos})
-  // }
+
+
+componentWillMount() {
+
+
+  let Bdmotos = this.state.Bdmotos;
+     Bdmotos .sort((a, b) => a.Precio !== b.Precio ? a.Precio < b.Precio ? -1 : 1 : 0);
+    this.setState({Bdmotos: Bdmotos})
+  }
+
+  orderLarge = () =>{
+    let Bdmotos = this.state.Bdmotos;
+    Bdmotos .sort((a, b) => a.Largo !== b.Largo ? a.Largo > b.Largo ? -1 : 1 : 0);
+    this.setState({Bdmotos: Bdmotos})
+  }
+
+  orderPrice= () =>{
+    let Bdmotos = this.state.Bdmotos;
+    Bdmotos .sort((a, b) => a.Precio !== b.Precio ? a.Precio < b.Precio ? -1 : 1 : 0);
+    this.setState({Bdmotos: Bdmotos})
+  }
 
   render() {
     let {Bdmotos} = this.state;
     // console.log('Bdmotos app',Bdmotos)
 
     return (
-<div>
+<div className="container">
   <h1>Cotizacion de motos</h1>
-  <Table responsive>
+  <Button onClick={this.orderLarge}> Por largo</Button>
+  <Button onClick={this.orderPrice}> Por Precio</Button>
+  <Table responsive  className=" red accent-1 white-text" >
     <thead>
     <tr>
       <th data-field="id">Modelo</th>
