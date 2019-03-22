@@ -10,6 +10,7 @@ const Rowz  = (props) =>{
       <td className="text-center">{props.moto.Cilindraje}</td>
       <td className="text-center" type="number">  {props.moto.Precio}</td>
       <td className="text-center">{props.moto.Frenos}</td>
+      <td className="text-center">{props.moto.LlantaTrasera}</td>
       <td className="text-center">{props.moto.Peso}</td>
       <td className="text-center">{props.moto.Largo}</td>
       <td className="text-center"><img src={props.moto.Urlimage} width="100" alt="fotos"/> </td>

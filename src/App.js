@@ -37,7 +37,7 @@ componentWillMount() {
 
     return (
 <div className="container">
-  <h1>Cotizacion de motos</h1>
+  <h1>Cotizacion de Motos Italika</h1>
   <Button onClick={this.orderLarge}> Por largo</Button>
   <Button onClick={this.orderPrice}> Por Precio</Button>
   <Table responsive  className=" red accent-1 white-text" >
