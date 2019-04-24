@@ -38,11 +38,10 @@ componentWillMount() {
 
   render() {
     let {Bdmotos} = this.state;
-    // console.log('Bdmotos app',Bdmotos)
 
     return (
 <div className="container">
-  <h1>Cotizacion de Motos Italika 150cc</h1>
+  <h2>Cotización de Motos Italika 150cc</h2>
   <Button onClick={this.orderLarge}> Por Largo</Button>
   <Button onClick={this.orderPrice}> Por Precio</Button>
   <Button onClick={this.orderWheel}> Por Llanta</Button>
