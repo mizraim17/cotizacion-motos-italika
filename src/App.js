@@ -43,9 +43,9 @@ componentWillMount() {
     return (
 <div className="container">
   <h1>Cotizacion de Motos Italika 150cc</h1>
-  <Button onClick={this.orderLarge}> Por largo</Button>
+  <Button onClick={this.orderLarge}> Por Largo</Button>
   <Button onClick={this.orderPrice}> Por Precio</Button>
-  <Button onClick={this.orderWheel}> Por Long Llanta</Button>
+  <Button onClick={this.orderWheel}> Por Llanta</Button>
   <Table responsive  className=" red accent-1 white-text" >
     <thead>
     <tr>
